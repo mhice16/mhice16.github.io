@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>My Future</title>
+		<link rel="stylesheet" href="assets/main.css">
+	</head>
+	
+	<body>
+
+		<!-- My Header -->
+
+  	<header class="primary-header">
+
+  		<nav class="nav primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li><!--
+       --><li><a href="future.html">Future</a></li>
+        </ul>
+      </nav>
+
+      <section class="logo container group">
+		  	<h1>
+	    		<a href="index.html">Ralph B. Minor</a>
+	    	</h1>
+	    	<h3>Aspiring Web Developer</h3>
+	    	<img id="dude" src="assets/images/home/rminor.jpg" alt="Ralph Minor">
+    	</section>
+
+    </header>
+
+		<!-- Future -->
+
+    <section class="container who">
+
+    	<h2>My Future?</h2>
+
+    	<p>I'm extremely excited to get started in the Galvanize Web Development Immersive program.  Get a glimpse by mousing over my pic.</p>
+
+		</section>
+
+    <section class="row">
+      <div class="grid">
+
+        <!-- Plans -->
+
+  	    <section class="teaser col-1-3">
+  	    	<h2>Plans</h2>
+          <ul>
+  	    		<li>My first goal is to successfully complete the web development program, establishing solid skills as a coder and junior full stack developer.</li>
+						<li>After graduation, I plan to pursue an opportunity that will allow me to continue to expand my coding knowledge and skills.  Whether that is in a start-up environment or something more established, I’m open to either at this point.</li>
+						<li>Completing this program will certainly be just the beginning in terms of my education process.  While I expect lots of OJT will come in the first years of working, I’ll also be looking for additional educational opportunities to go deeper and specialize in an area or two.</li>
+					</ul>
+  	    </section><!--
+
+        Hopes and Dreams
+
+		 --><section class="teaser col-2-3">
+					<h2>Hopes and Dreams</h2>
+					<ul>
+  	    		<li>I love when technology is done so well that that the user is amazed by the new capability it provides.  I dream of helping to make something that truly fascinates.</li>
+						<li>At some point, I would love to branch out on my own with a start-up business.  I'd love the challenge and excitement and really hope to find the opportunity to do that.</li>
+						<li>I hope to have a lot of fun along the way.  I genuinely enjoy trying to make stuff and I hope to work with others that do too.</li>
+					</ul>
+  	    </section>
+
+  	   </div>
+    </section>
+
+
+		<footer class="primary-footer">
+    		<small>&copy; Ralph Minor 2016</small>
+		</footer>
+
+		<script >
+			// Image switching code.
+			var targetImg = document.getElementById("dude");
+			targetImg.onmouseover = swapPic;
+			targetImg.onmouseout = swapBack;z
+
+			function swapPic() {
+				targetImg.src="assets/images/future/thedude.gif";
+			}
+
+			function swapBack() {
+				targetImg.src="assets/images/home/rminor.jpg"
+			}
+		</script>
+
+	</body>
+
+</html>
